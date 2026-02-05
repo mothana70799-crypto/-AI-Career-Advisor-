@@ -1,86 +1,90 @@
-منصة ويب مدعومة بالذكاء الاصطناعي تساعد الطلاب والخريجين على اكتشاف مستقبلهم المهني واختيار التخصص والمسار الوظيفي الأنسب لهم بطريقة ذكية وتفاعلية.
+🚀 Smart Career Advisor (AI Career Advisor)
 
-💡 فكرة المشروع
+An AI-powered web platform that helps students and graduates discover their future career path and choose the most suitable major and profession through an intelligent and interactive experience.
 
-بدلاً من الحيرة في اختيار التخصص أو الوظيفة، تقوم المنصة بتحليل:
+💡 Project Idea
 
-الميول
+Instead of feeling confused about choosing a major or career, the platform analyzes:
 
-المهارات
+Interests
 
-الاهتمامات
+Skills
 
-الشخصية
+Preferences
 
-ثم تقترح تخصصات ووظائف مناسبة مع خطة تعلم واضحة ومخصصة لكل مستخدم.
+Personality
 
-✨ مميزات المنصة
-🧠 ذكاء اصطناعي متقدم
+Then it recommends suitable majors and job paths along with a clear and personalized learning plan for each user.
 
-تحليل دقيق لميولك واقتراح تخصصات ووظائف تناسبك باستخدام خوارزميات الذكاء الاصطناعي.
+✨ Platform Features
+🧠 Advanced Artificial Intelligence
 
-📚 خطة تعلم مخصصة
+Accurate analysis of your interests and skills with smart recommendations for majors and careers using AI algorithms.
 
-مسار تعليمي واضح خطوة بخطوة
+📚 Personalized Learning Plan
 
-كورسات وروابط تعليمية معتمدة
+Step-by-step learning roadmap
 
-جدول زمني منظم
+Trusted courses and resources
 
-تحديد المهارات المطلوبة لسوق العمل
+Organized study schedule
 
-📄 سيرة ذاتية احترافية
+Required skills for the job market
 
-إنشاء سيرة ذاتية تلقائيًا
+📄 Professional Resume Builder
 
-تصاميم عصرية وحديثة
+Automatically generate your CV
 
-تحميل بصيغة PDF
+Modern and clean designs
 
-جاهزة للتقديم على الوظائف
+Export as PDF
 
-📊 تقارير أداء
+Ready for job applications
 
-متابعة تقدمك التعليمي
+📊 Performance Reports
 
-تحليل نقاط القوة والضعف
+Track your learning progress
 
-توصيات لتحسين مستواك
+Analyze strengths and weaknesses
 
-👥 آراء المستخدمين
+Personalized improvement suggestions
 
-سامي العتيبي – طالب جامعي
-ساعدتني المنصة في اكتشاف تخصص يناسبني فعلاً، والخطة التعليمية كانت واضحة وسهلة.
+👥 User Reviews
 
-نورة الحربي – خريجة ثانوي
-الاختبار كان ممتع وسهل، والنتائج ساعدتني أقرر تخصصي بثقة.
+Sami Alotaibi – University Student
+The platform helped me discover a major that truly fits me, and the learning plan was clear and easy to follow.
 
-🛠️ التقنيات المستخدمة
+Noura Alharbi – High School Graduate
+The assessment was simple and enjoyable, and the results helped me choose my major with confidence.
 
-Frontend: HTML / CSS / JavaScript أو React / Next.js
+🛠️ Technologies Used
 
-Backend: Node.js أو PHP أو .NET
+Frontend: HTML / CSS / JavaScript or React / Next.js
 
-الذكاء الاصطناعي: OpenAI API أو Gemini
+Backend: Node.js or PHP or .NET
 
-قاعدة البيانات: MySQL أو Firebase
+AI: OpenAI API or Gemini
 
-(يمكنك تعديل التقنيات حسب مشروعك)
+Database: MySQL or Firebase
 
-🚀 طريقة التشغيل
+(You can modify these technologies based on your project)
 
-تثبيت المتطلبات
+🚀 Getting Started
+Install dependencies
+
 npm install
 
-تشغيل المشروع
+Run the project
+
 npm run dev
 
-أو حسب بيئة التطوير المستخدمة لديك.
+Or follow the setup instructions based on your development environment.
 
-🔒 سياسة الخصوصية
+🔒 Privacy Policy
 
-نحترم خصوصية جميع المستخدمين، ولا يتم مشاركة أو بيع أي بيانات شخصية لأي طرف ثالث.
+We respect users’ privacy and do not share or sell any personal data to third parties.
 
-📞 تواصل معنا
+📞 Contact Us
 
-للاستفسارات أو الاقتراحات:
+For questions or suggestions:
+mothana70799@gmail.com
