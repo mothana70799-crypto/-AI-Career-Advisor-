@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نتائج الاختبار | المستشار المهني الذكي</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="container py-5">
+    <h2 class="mb-4 text-center">نتائجك الذكية</h2>
+    <div class="card p-4 mb-4">
+      <h4>تحليل شخصيتك المهنية</h4>
+      <p>مثال: أنت تميل إلى التخصصات التقنية والإبداعية...</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>أفضل 5 تخصصات مناسبة</h5>
+        <ol>
+          <li>علوم الحاسب</li>
+          <li>الهندسة</li>
+          <li>إدارة الأعمال</li>
+          <li>التسويق الرقمي</li>
+          <li>التصميم الجرافيكي</li>
+        </ol>
+      </div>
+      <div class="col-md-6">
+        <h5>أفضل 5 وظائف مستقبلية</h5>
+        <ol>
+          <li>مطور برمجيات</li>
+          <li>محلل بيانات</li>
+          <li>مدير مشاريع</li>
+          <li>مصمم واجهات</li>
+          <li>خبير تسويق رقمي</li>
+        </ol>
+      </div>
+    </div>
+    <div class="mt-4">
+      <h6>نسبة التوافق لكل خيار</h6>
+      <ul>
+        <li>علوم الحاسب: 92%</li>
+        <li>الهندسة: 88%</li>
+        <li>إدارة الأعمال: 80%</li>
+        <li>التسويق الرقمي: 77%</li>
+        <li>التصميم الجرافيكي: 74%</li>
+      </ul>
+    </div>
+    <div class="alert alert-info mt-4">شرح سبب التوصية: تم تحليل إجاباتك واقتراح التخصصات بناءً على مهاراتك وميولك.</div>
+    <div class="mt-4 text-center">
+      <button id="shareResult" class="btn btn-gradient px-4 py-2"><i class="fa-solid fa-share-nodes ms-2"></i> مشاركة النتائج</button>
+      <div id="shareOptions" style="display:none;" class="mt-3">
+        <button class="btn btn-success mx-1" id="shareWhatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</button>
+        <button class="btn btn-info mx-1" id="shareTwitter"><i class="fa-brands fa-twitter"></i> تويتر</button>
+        <button class="btn btn-secondary mx-1" id="copyLink"><i class="fa-solid fa-link"></i> نسخ الرابط</button>
+      </div>
+    </div>
+  </div>
+  <!-- نافذة دردشة استشارية -->
+  <div id="chatWidget" style="position:fixed;bottom:24px;left:24px;z-index:9999;max-width:350px;display:none;">
+    <div style="background:#fff;border-radius:1rem;box-shadow:0 2px 12px #0002;overflow:hidden;">
+      <div style="background:#4f8cff;color:#fff;padding:0.7rem 1rem;font-weight:700;">دردشة استشارية <button id="closeChat" style="float:left;background:none;border:none;color:#fff;font-size:1.2rem;">&times;</button></div>
+      <div id="chatMessages" style="height:180px;overflow-y:auto;padding:1rem;font-size:0.95rem;"></div>
+      <form id="chatForm" style="display:flex;border-top:1px solid #eee;">
+        <input type="text" id="chatInput" placeholder="اكتب سؤالك..." style="flex:1;padding:0.5rem;border:none;">
+        <button type="submit" style="background:#7c3aed;color:#fff;border:none;padding:0.5rem 1rem;">إرسال</button>
+      </form>
+    </div>
+  </div>
+  <button id="openChat" style="position:fixed;bottom:24px;left:24px;z-index:9998;background:#7c3aed;color:#fff;border:none;border-radius:50%;width:56px;height:56px;font-size:1.5rem;box-shadow:0 2px 12px #0002;">💬</button>
+  <button id="toggleLang" class="btn btn-outline-primary position-fixed top-0 start-0 m-3" title="تغيير اللغة"><i class="fa-solid fa-language"></i></button>
+  <script src="scripts.js"></script>
+</body>
+  <script src="scripts.js"></script>
+</html>

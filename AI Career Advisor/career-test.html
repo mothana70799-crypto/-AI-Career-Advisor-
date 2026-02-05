@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اختبار الميول المهنية | المستشار المهني الذكي</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="container py-5">
+    <h2 class="mb-4 text-center">اختبار الميول المهنية</h2>
+    <form id="careerTestForm">
+      <!-- أسئلة تفاعلية ستضاف لاحقًا -->
+      <div class="mb-3">
+        <label class="form-label">ما هي المواد التي تفضلها؟</label>
+        <select class="form-select" required>
+          <option value="">اختر...</option>
+          <option>الرياضيات</option>
+          <option>العلوم</option>
+          <option>اللغة العربية</option>
+          <option>البرمجة</option>
+          <option>الفنون</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">عرض النتائج</button>
+    </form>
+  </div>
+  <!-- نافذة دردشة استشارية -->
+  <div id="chatWidget" style="position:fixed;bottom:24px;left:24px;z-index:9999;max-width:350px;display:none;">
+    <div style="background:#fff;border-radius:1rem;box-shadow:0 2px 12px #0002;overflow:hidden;">
+      <div style="background:#4f8cff;color:#fff;padding:0.7rem 1rem;font-weight:700;">دردشة استشارية <button id="closeChat" style="float:left;background:none;border:none;color:#fff;font-size:1.2rem;">&times;</button></div>
+      <div id="chatMessages" style="height:180px;overflow-y:auto;padding:1rem;font-size:0.95rem;"></div>
+      <form id="chatForm" style="display:flex;border-top:1px solid #eee;">
+        <input type="text" id="chatInput" placeholder="اكتب سؤالك..." style="flex:1;padding:0.5rem;border:none;">
+        <button type="submit" style="background:#7c3aed;color:#fff;border:none;padding:0.5rem 1rem;">إرسال</button>
+      </form>
+    </div>
+  </div>
+  <button id="openChat" style="position:fixed;bottom:24px;left:24px;z-index:9998;background:#7c3aed;color:#fff;border:none;border-radius:50%;width:56px;height:56px;font-size:1.5rem;box-shadow:0 2px 12px #0002;">💬</button>
+  <button id="toggleLang" class="btn btn-outline-primary position-fixed top-0 start-0 m-3" title="تغيير اللغة"><i class="fa-solid fa-language"></i></button>
+  <script src="scripts.js"></script>
+</body>
+  <script src="scripts.js"></script>
+</html>

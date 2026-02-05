@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المستشار المهني الذكي | AI Career Advisor</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Landing Page Content Here -->
+  <header class="bg-primary text-white text-center py-5 position-relative">
+    <button id="toggleDark" class="btn btn-dark position-absolute top-0 end-0 m-3" title="وضع ليلي"><i class="fa-solid fa-moon"></i></button>
+    <button id="toggleLang" class="btn btn-outline-light position-absolute top-0 start-0 m-3" title="تغيير اللغة"><i class="fa-solid fa-language"></i></button>
+    <h1 class="display-4">اكتشف مستقبلك المهني بالذكاء الاصطناعي</h1>
+    <p class="lead">منصة ذكية تساعدك على اختيار التخصص والمسار المهني الأنسب لك</p>
+    <a href="career-test.html" class="btn btn-light btn-lg mt-3">ابدأ الاختبار</a>
+  </header>
+  <div id="notify" style="position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:9999;min-width:250px;max-width:90vw;display:none;"></div>
+  <main class="container my-5">
+    <!-- Features Section -->
+    <section class="row text-center mb-5">
+      <h2 class="mb-4 fw-bold">مميزات المنصة</h2>
+      <div class="col-md-4 mb-4">
+        <div class="feature-box p-4 shadow rounded-4 h-100 bg-white">
+          <i class="fa-solid fa-brain fa-3x mb-3 text-primary"></i>
+          <h5 class="fw-bold">ذكاء اصطناعي متقدم</h5>
+          <p>تحليل دقيق لميولك واقتراح تخصصات ووظائف مناسبة لك.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature-box p-4 shadow rounded-4 h-100 bg-white">
+          <i class="fa-solid fa-user-graduate fa-3x mb-3 text-primary"></i>
+          <h5 class="fw-bold">خطة تعلم مخصصة</h5>
+          <p>مسار تعليمي واضح مع كورسات وروابط معتمدة وجدول زمني.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature-box p-4 shadow rounded-4 h-100 bg-white">
+          <i class="fa-solid fa-file-lines fa-3x mb-3 text-primary"></i>
+          <h5 class="fw-bold">سيرة ذاتية احترافية</h5>
+          <p>مولد سيرة ذاتية تلقائي بتصاميم عصرية وقابلة للتحميل PDF.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="mb-5">
+      <h2 class="mb-4 fw-bold text-center">آراء المستخدمين</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <div class="testimonial-box p-4 shadow rounded-4 bg-light h-100">
+            <div class="d-flex align-items-center mb-2">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user" class="rounded-circle me-2" width="48" height="48">
+              <div>
+                <strong>سامي العتيبي</strong><br><span class="text-muted small">طالب جامعي</span>
+              </div>
+            </div>
+            <p class="mb-0">ساعدتني المنصة في اكتشاف تخصص يناسبني فعلاً، والخطة التعليمية كانت واضحة وسهلة.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="testimonial-box p-4 shadow rounded-4 bg-light h-100">
+            <div class="d-flex align-items-center mb-2">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="user" class="rounded-circle me-2" width="48" height="48">
+              <div>
+                <strong>نورة الحربي</strong><br><span class="text-muted small">خريجة ثانوي</span>
+              </div>
+            </div>
+            <p class="mb-0">الاختبار كان ممتع وسهل، والنتائج ساعدتني أقرر تخصصي بثقة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Call to Action -->
+    <div class="text-center my-5 d-flex flex-column flex-md-row justify-content-center gap-3">
+      <a href="career-test.html" class="btn btn-gradient btn-lg px-5 py-3 shadow">ابدأ رحلتك الآن <i class="fa-solid fa-arrow-left ms-2"></i></a>
+      <a href="cv-builder.html" class="btn btn-outline-primary btn-lg px-5 py-3 shadow">أنشئ سيرتك الذاتية <i class="fa-solid fa-file-lines ms-2"></i></a>
+    </div>
+  </main>
+  <!-- نافذة دردشة استشارية -->
+  <div id="chatWidget" style="position:fixed;bottom:24px;left:24px;z-index:9999;max-width:350px;display:none;">
+    <div style="background:#fff;border-radius:1rem;box-shadow:0 2px 12px #0002;overflow:hidden;">
+      <div style="background:#4f8cff;color:#fff;padding:0.7rem 1rem;font-weight:700;">دردشة استشارية <button id="closeChat" style="float:left;background:none;border:none;color:#fff;font-size:1.2rem;">&times;</button></div>
+      <div id="chatMessages" style="height:180px;overflow-y:auto;padding:1rem;font-size:0.95rem;"></div>
+      <form id="chatForm" style="display:flex;border-top:1px solid #eee;">
+        <input type="text" id="chatInput" placeholder="اكتب سؤالك..." style="flex:1;padding:0.5rem;border:none;">
+        <button type="submit" style="background:#7c3aed;color:#fff;border:none;padding:0.5rem 1rem;">إرسال</button>
+      </form>
+    </div>
+  </div>
+  <button id="openChat" style="position:fixed;bottom:24px;left:24px;z-index:9998;background:#7c3aed;color:#fff;border:none;border-radius:50%;width:56px;height:56px;font-size:1.5rem;box-shadow:0 2px 12px #0002;">💬</button>
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>© 2026 المستشار المهني الذكي | جميع الحقوق محفوظة</p>
+    <a href="#" class="text-white mx-2">سياسة الخصوصية</a>
+    <a href="#" class="text-white mx-2">تواصل معنا</a>
+  </footer>
+</body>
+  <script src="scripts.js"></script>
+</html>
